@@ -6,7 +6,17 @@ const initialItems = [
   { id: 5, description: "Laptops", quantity: 2, packed: true },
 ];
 
+// import { useState } from "react";
+
 const Pakgeing = () => {
+  //   const [initialItems, setInitialItems] = useState([
+  //     {
+  //       id: 1,
+  //       description: "Demo1",
+  //       quantity: 2,
+  //       packed: false,
+  //     },
+  //   ]);
   return (
     <>
       <div className="list">
