@@ -1,5 +1,5 @@
 import "./App.css";
-import Logo from "./Components/Logo/Logo";
+import Logo from "./Components/Logo";
 
 const App = () => {
   return (
