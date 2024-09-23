@@ -19,7 +19,7 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
           {data &&
             data.map((item) => {
               return (
-                <>
+                <div key={item.id}>
                   {" "}
                   <li>
                     <span
@@ -32,7 +32,7 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
                     </span>
                     <button onClick={() => onDelete(item.id)}>❌</button>
                   </li>
-                </>
+                </div>
               );
             })}
         </ul>
@@ -45,8 +45,8 @@ Pakgeing.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired, // Corrected property name
-      quantity: PropTypes.number.isRequired, // Corrected property name
+      desc: PropTypes.string.isRequired, // Corrected property name
+      quntity: PropTypes.number.isRequired, // Corrected property name
       packed: PropTypes.bool.isRequired,
     })
   ).isRequired,
