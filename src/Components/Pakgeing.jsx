@@ -17,9 +17,11 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
         <ul>
           {/* // eslint-disable-next-line react/prop-types */}
           {data &&
+            // eslint-disable-next-line react/prop-types
             data.map((item) => {
               return (
-                <div key={item.id}>
+                <>
+                  {" "}
                   <li>
                     <span
                       onClick={() => onhandleCheck(item.id)}
@@ -31,7 +33,7 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
                     </span>
                     <button onClick={() => onDelete(item.id)}>❌</button>
                   </li>
-                </div>
+                </>
               );
             })}
         </ul>

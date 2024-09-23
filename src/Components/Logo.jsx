@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <div>
-      <h1>🌴 MyTravels 🏖️</h1>
+      <h1>🌴 MYBaGList 🏖️</h1>
     </div>
   );
 };
