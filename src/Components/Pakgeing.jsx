@@ -1,6 +1,6 @@
 // import { useState } from "react";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
 const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
   //   const [initialItems, setInitialItems] = useState([
   //     {
@@ -17,7 +17,6 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
         <ul>
           {/* // eslint-disable-next-line react/prop-types */}
           {data &&
-            // eslint-disable-next-line react/prop-types
             data.map((item) => {
               return (
                 <>
@@ -40,6 +39,19 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
       </div>
     </>
   );
+};
+
+Pakgeing.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired, // Corrected property name
+      quantity: PropTypes.number.isRequired, // Corrected property name
+      packed: PropTypes.bool.isRequired,
+    })
+  ).isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onhandleCheck: PropTypes.func.isRequired,
 };
 
 export default Pakgeing;
