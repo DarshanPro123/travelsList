@@ -1,7 +1,9 @@
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
   { id: 2, description: "Socks", quantity: 12, packed: true },
-  { id: 3, description: "Book", quantity: 2, packed: true },
+  { id: 3, description: "Book", quantity: 2, packed: false },
+  { id: 4, description: "Charger", quantity: 1, packed: false },
+  { id: 5, description: "Laptops", quantity: 2, packed: true },
 ];
 
 const Pakgeing = () => {
@@ -12,7 +14,7 @@ const Pakgeing = () => {
         <ul>
           {initialItems.map((item) => {
             return (
-              <>
+              <div key={item.id}>
                 <li>
                   <span
                     //   onClick={handlPackege}
@@ -24,7 +26,7 @@ const Pakgeing = () => {
                   </span>
                   <button>❌</button>
                 </li>
-              </>
+              </div>
             );
           })}
         </ul>
