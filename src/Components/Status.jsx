@@ -1,9 +1,11 @@
 export const Status = () => {
   return (
     <>
-      <footer>
+      <footer className="stats">
         {" "}
-        <em> There is you selected so many items, and you </em>
+        <em>
+          You have x items in your list ,and you package x% in you bag 🎒{" "}
+        </em>
       </footer>
     </>
   );

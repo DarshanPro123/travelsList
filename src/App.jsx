@@ -7,10 +7,12 @@ import { Status } from "./Components/Status";
 const App = () => {
   return (
     <>
-      <Logo />
-      <Form />
-      <Pakgeing />
-      <Status />
+      <div className="app">
+        <Logo />
+        <Form />
+        <Pakgeing />
+        <Status />
+      </div>
     </>
   );
 };
