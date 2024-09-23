@@ -4,7 +4,8 @@ export const Status = () => {
       <footer className="stats">
         {" "}
         <em>
-          You have x items in your list ,and you package x% in you bag 🎒{" "}
+          You need to items in your list ,Add name in input and add in your bag
+          🎒{" "}
         </em>
       </footer>
     </>

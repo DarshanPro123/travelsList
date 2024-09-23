@@ -81,7 +81,7 @@ input {
   background-color: #5a3e2b;
   color: #ffebb3;
   padding: 4rem 0;
-
+  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -136,4 +136,31 @@ input[type="checkbox"] {
   font-weight: 600;
   padding: 3.2rem 0;
   font-family: "Monoton";
+}
+
+@media (max-width: 430px) {
+  body {
+    height: 100vh;
+  }
+
+  .app {
+    height: 100vh;
+  }
+
+  h1 {
+    text-align: left;
+    width: 100%;
+    font-size: 4.1rem;
+  }
+  .add-form {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    align-content: center;
+  }
 }
