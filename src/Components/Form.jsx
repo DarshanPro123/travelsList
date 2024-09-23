@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export const Form = () => {
+// eslint-disable-next-line react/prop-types
+export const Form = ({ onhandleAdd }) => {
   const [desc, setDesc] = useState(""); // get description from iput value
   const [quntity, setQuantity] = useState(1); //gett quantity value from select dropdown of numbers
   const handleSubmit = (e) => {
@@ -10,13 +11,9 @@ export const Form = () => {
     // after data get from input it's clear input in screen
     console.log(quntity);
 
-    const newItem = {
-      desc,
-      quntity,
-      packed: false,
-      id: Date.now(),
-    };
+    const newItem = { desc, quntity, packed: false, id: Date.now() };
     console.log(newItem);
+    onhandleAdd(newItem);
     setDesc("");
     setQuantity(1);
   };
