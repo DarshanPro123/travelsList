@@ -22,8 +22,11 @@ const Pakgeing = ({ data, onDelete, onhandleCheck }) => {
                 <div key={item.id}>
                   {" "}
                   <li>
-                    <span
+                    <input
+                      type="checkbox"
                       onClick={() => onhandleCheck(item.id)}
+                    />
+                    <span
                       style={
                         item.packed ? { textDecoration: "Line-through" } : {}
                       }
